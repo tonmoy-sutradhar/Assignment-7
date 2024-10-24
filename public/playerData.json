@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "image": "https://images.mykhel.com/webp/images/cricket/players/8/3788.jpg",
+    "country": "India",
+    "bating_position": "Right-hand",
+    "player_status": "All-rounder",
+    "price": 1200000
+  },
+  {
+    "id": 2,
+    "name": "MS Dhoni",
+    "image": "https://images.mykhel.com/webp/images/cricket/players/8/3788.jpg",
+    "country": "India",
+    "bating_position": "Left-hand",
+    "player_status": "Bowler",
+    "price": 850000
+  },
+  {
+    "id": 3,
+    "name": "James Taylor",
+    "image": "https://images.mykhel.com/webp/images/cricket/players/8/3788.jpg",
+    "country": "England",
+    "bating_position": "Right-hand",
+    "player_status": "Batter",
+    "price": 950000
+  },
+  {
+    "id": 4,
+    "name": "Mohammad Hassan",
+    "image": "https://images.mykhel.com/webp/images/cricket/players/8/3788.jpg",
+    "country": "Pakistan",
+    "bating_position": "Left-hand",
+    "player_status": "Bowler",
+    "price": 780000
+  },
+  {
+    "id": 5,
+    "name": "David Miller",
+    "image": "https://images.mykhel.com/webp/images/cricket/players/8/3788.jpg",
+    "country": "South Africa",
+    "bating_position": "Right-hand",
+    "player_status": "Batter",
+    "price": 1150000
+  },
+  {
+    "id": 6,
+    "name": "Jason Williams",
+    "image": "https://images.mykhel.com/webp/images/cricket/players/8/3788.jpg",
+    "country": "West Indies",
+    "bating_position": "Left-hand",
+    "player_status": "All-rounder",
+    "price": 980000
+  },
+  {
+    "id": 7,
+    "name": "Marcus Leach",
+    "image": "https://images.mykhel.com/webp/images/cricket/players/8/3788.jpg",
+    "country": "New Zealand",
+    "bating_position": "Right-hand",
+    "player_status": "All-rounder",
+    "price": 1030000
+  }
+]

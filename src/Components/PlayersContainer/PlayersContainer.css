@@ -1,0 +1,16 @@
+.active {
+  background-color: rgb(208, 255, 0);
+  color: black;
+}
+
+.btns {
+  padding: 15px;
+  border: 2px solid skyblue;
+  border-radius: 10px;
+}
+
+.player-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+}
