@@ -1,9 +1,12 @@
 import "./App.css";
+import Banner from "./Components/Banner/Banner";
+import Navbar from "./Components/Header/Navbar";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl text-center font-bold">Bpl Dream 11</h1>
+      <Navbar></Navbar>
+      <Banner></Banner>
     </>
   );
 }
