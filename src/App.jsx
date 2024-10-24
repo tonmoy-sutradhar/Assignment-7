@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./Components/Banner/Banner";
 import Navbar from "./Components/Header/Navbar";
 import PlayersContainer from "./Components/PlayersContainer/PlayersContainer";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   // Button Toggle
@@ -34,6 +35,8 @@ function App() {
         isActive={isActive}
         handlePlayers={handlePlayers}
       ></PlayersContainer>
+
+      <Footer></Footer>
     </>
   );
 }

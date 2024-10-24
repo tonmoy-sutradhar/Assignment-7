@@ -6,7 +6,7 @@ const Player = ({ pr }) => {
   return (
     <div>
       <div className="player-card">
-        <img className="w-50" src={image} alt="" />
+        <img className="w-50 " src={image} alt="" />
         <div className="flex justify-start items-center gap-3 mt-3">
           <img
             className="w-8"
