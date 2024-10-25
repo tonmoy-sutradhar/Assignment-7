@@ -1,6 +1,7 @@
+![alt text (https://i.ibb.co.com/K0Kfgzr/logo.png)https://i.ibb.co.com/K0Kfgzr/logo.png]
+
 # Project Name: BPL Dream 11
 
-![alt text](https://i.ibb.co.com/K0Kfgzr/logo.png)https://i.ibb.co.com/K0Kfgzr/logo.png
 Live link: UpComming.
 
 # Description:
