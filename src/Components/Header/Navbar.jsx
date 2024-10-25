@@ -1,22 +1,22 @@
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ price }) => {
   return (
-    <div className="flex justify-between items-center  py-3 bg-sky-100 w-full  sticky top-0 z-50 bg-opacity-65">
+    <div className="flex justify-between items-center w-full mx-auto  py-3 bg-sky-100   sticky top-0 z-50 bg-opacity-65">
       <div>
         <img
-          className="ml-3"
+          className="ml-8"
           src="https://i.ibb.co.com/K0Kfgzr/logo.png"
           alt="img"
         />
       </div>
-      <div className="text-xl font-bold flex justify-center items-center gap-8 mr-3">
+      <div className="text-xl font-bold flex justify-center items-center gap-8 mr-7">
         <p>Home</p>
         <p>Fixture</p>
         <p>Teams</p>
         <p>Schedules</p>
         <h1 className="flex gap-2 border-2 border-sky-300 p-2 rounded-xl">
-          <span>0</span>
+          <span>{price}</span>
           Coins
           <img
             className="w-8"

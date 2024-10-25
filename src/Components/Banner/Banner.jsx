@@ -1,6 +1,6 @@
 import "./Banner.css";
 
-const Banner = () => {
+const Banner = ({ handlePriceIncrease }) => {
   return (
     <div className="cover-img">
       <img
@@ -16,7 +16,12 @@ const Banner = () => {
         Beyond Boundaries Beyond Limits
       </h2>
       <div className="text-center">
-        <button className="btn text-small font-bold ">Claim Free Credit</button>
+        <button
+          onClick={handlePriceIncrease}
+          className="btn text-small font-bold "
+        >
+          Claim Free Credit
+        </button>
       </div>
     </div>
   );

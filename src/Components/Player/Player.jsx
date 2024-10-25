@@ -1,25 +1,29 @@
 import "./Player.css";
 
 const Player = ({ pr, handleAllPlayer }) => {
-  const { name, image, price, country, bating_position, player_status } = pr;
+  const {
+    name,
+    image,
+    price,
+    country,
+    bating_position,
+    player_status,
+    rating,
+  } = pr;
 
   return (
     <div>
       <div className="player-card">
         <img className="w-50 " src={image} alt="" />
         <div className="flex justify-start items-center gap-3 mt-3">
-          <img
-            className="w-8"
-            src="https://img.icons8.com/?size=80&id=2zQuuMM0XuM9&format=png"
-            alt=""
-          />
+          <img className="w-8 border-2 rounded-full" src={image} alt="" />
           <span className="text-xl font-bold">{name}</span>
         </div>
         <div className="flex justify-between items-center mb-3">
           <div className="flex justify-center items-center gap-3 mt-3">
             <img
               className="w-6"
-              src="https://img.icons8.com/?size=80&id=WT7wa2uOjvlZ&format=png"
+              src={"https://img.icons8.com/?size=80&id=WT7wa2uOjvlZ&format=png"}
               alt=""
             />
             <span className="text-small font-semibold text-gray-500">
@@ -31,8 +35,14 @@ const Player = ({ pr, handleAllPlayer }) => {
           </h1>
         </div>
         <hr />
-        <h1 className="text-small font-semibold mt-2 ">Rating</h1>
-        <h1 className="text-small font-semibold mt-1 ">{bating_position}</h1>
+        <div className="flex justify-between items-center ">
+          <h1 className="text-small font-semibold mt-2 ">Rating:</h1>
+          <h1 className="text-gray-500">{rating}</h1>
+        </div>
+        <div className="flex justify-between items-center ">
+          <h1 className="text-small font-semibold mt-2 ">Bating position:</h1>
+          <h1 className="text-gray-500 ">{bating_position}</h1>
+        </div>
         <div className="flex justify-between items-center">
           <h1 className="text-small font-semibold ">price: ${price}</h1>
 

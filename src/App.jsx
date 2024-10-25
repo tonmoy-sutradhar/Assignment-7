@@ -29,6 +29,14 @@ function App() {
     }
   };
 
+  // Increase Price
+  const [price, setPrice] = useState(0);
+
+  const handlePriceIncrease = () => {
+    setPrice((taka) => taka + 7700000);
+  };
+
+  // Show all player
   const [allPlayers, setAllPlayers] = useState([]);
 
   const handleAllPlayer = (plyer) => {
@@ -42,12 +50,18 @@ function App() {
     }
   };
 
+  const handleDeletePlayer = (id) => {
+    const removePlayer = allPlayers.filter((p) => p.id != id);
+    setAllPlayers(removePlayer);
+  };
+
   return (
     <>
-      <Navbar></Navbar>
-      <Banner></Banner>
+      <Navbar price={price}></Navbar>
+      <Banner handlePriceIncrease={handlePriceIncrease}></Banner>
 
       <PlayersContainer
+        handleDeletePlayer={handleDeletePlayer}
         allPlayers={allPlayers}
         handleAllPlayer={handleAllPlayer}
         isActive={isActive}
@@ -57,7 +71,7 @@ function App() {
       <Footer></Footer>
       <ToastContainer
         position="top-center"
-        autoClose={3000}
+        autoClose={1000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

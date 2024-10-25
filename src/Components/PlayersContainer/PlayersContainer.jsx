@@ -3,7 +3,11 @@ import Player from "../Player/Player";
 import SelectedPlayer from "../SelectedPlayer/SelectedPlayer";
 import "./PlayersContainer.css";
 
-const PlayersContainer = ({ handleAllPlayer, allPlayers }) => {
+const PlayersContainer = ({
+  handleAllPlayer,
+  allPlayers,
+  handleDeletePlayer,
+}) => {
   const [players, setPlayers] = useState([]);
   const [isActive, setIsActive] = useState("player");
 
@@ -51,6 +55,7 @@ const PlayersContainer = ({ handleAllPlayer, allPlayers }) => {
           ))
         ) : (
           <SelectedPlayer
+            handleDeletePlayer={handleDeletePlayer}
             allPlayers={allPlayers}
             players={players}
           ></SelectedPlayer>
