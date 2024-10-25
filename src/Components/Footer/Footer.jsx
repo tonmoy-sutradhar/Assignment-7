@@ -3,32 +3,37 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer bg-base-200 text-base-content p-10">
+      <div className="bg-black">
+        <div className=" imageeee">
+          <img src="https://i.ibb.co.com/Rzm1BbG/logo-footer.png" alt="" />
+        </div>
+      </div>
+      <footer className="footer bg-black p-10 text-white  border-b-2 border-gray-500 ">
         <nav>
-          <h6 className="footer-title">Services</h6>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
+          <h6 className="text-xl font-bold text-white">About Us</h6>
+          <p className="w-96 text-gray-500">
+            We are a passionate team dedicated to providing the best services to
+            our customers. Our commitment to excellence is reflected in our core
+            values of integrity, innovation, and customer satisfaction. We
+            believe in building lasting relationships and strive to exceed
+            expectations in every interaction.
+          </p>
         </nav>
+
         <nav>
-          <h6 className="footer-title">Company</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <h6 className="text-xl font-bold text-white">Quick Links</h6>
+          <a className="link link-hover text-gray-500">Home</a>
+          <a className="link link-hover text-gray-500">Service</a>
+          <a className="link link-hover text-gray-500">About</a>
+          <a className="link link-hover text-gray-500">Contact</a>
         </nav>
         <form>
-          <h6 className="footer-title">Newsletter</h6>
+          <h6 className="text-xl font-bold text-white">Subscribe</h6>
           <fieldset className="form-control w-80">
             <label className="label">
-              <span className="label-text">Enter your email address</span>
+              <span className="text-gray-500">
+                Subscribe to our newsletter for the latest updates.
+              </span>
             </label>
             <div className="join">
               <input
@@ -41,6 +46,11 @@ const Footer = () => {
           </fieldset>
         </form>
       </footer>
+      <div className="bg-black p-6 ">
+        <h1 className="text-gray-500 font-bold text-center">
+          @2024 Your Company All Rights Reserved.
+        </h1>
+      </div>
     </div>
   );
 };

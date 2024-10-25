@@ -7,6 +7,7 @@ import Footer from "./Components/Footer/Footer";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Subcribe from "./Components/Subcribe/Subcribe";
 
 function App() {
   // Button Toggle
@@ -29,17 +30,33 @@ function App() {
     }
   };
 
-  // Increase Price
+  // Price
   const [price, setPrice] = useState(0);
 
+  // This is for Automatic Claim price
   const handlePriceIncrease = () => {
     setPrice((taka) => taka + 7700000);
+  };
+
+  const handleDecresePrice = (pric) => {
+    if (price == 0) {
+      toast.warning("Balance is Very low!!");
+    } else {
+      setPrice(price - pric);
+    }
+  };
+
+  const handleAfterDeleteP = (id) => {
+    const plyr = allPlayers.find((p) => p.id == id);
+    setPrice(price + plyr.price);
   };
 
   // Show all player
   const [allPlayers, setAllPlayers] = useState([]);
 
   const handleAllPlayer = (plyer) => {
+    handleDecresePrice(plyer.price);
+
     const isExist = allPlayers.find((p) => p.id == plyer.id);
     if (isExist) {
       toast.error("Player already exist");
@@ -53,6 +70,7 @@ function App() {
   };
 
   const handleDeletePlayer = (id) => {
+    handleAfterDeleteP(id);
     const RmvPlayerName = allPlayers.find((p) => p.id == id);
     const removePlayer = allPlayers.filter((p) => p.id != id);
     setAllPlayers(removePlayer);
@@ -75,6 +93,7 @@ function App() {
         handlePlayers={handlePlayers}
       ></PlayersContainer>
 
+      <Subcribe></Subcribe>
       <Footer></Footer>
       <ToastContainer
         position="top-center"
