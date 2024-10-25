@@ -1,8 +1,10 @@
 import { toast } from "react-toastify";
 import "./SelectedPlayer.css";
 import PlayersContainer from "../PlayersContainer/PlayersContainer";
+import { useState } from "react";
 
 const SelectedPlayer = ({ allPlayers, handleDeletePlayer, handlePlayers }) => {
+  // const [isActive, setIsActive] = useState("player");
   return (
     <div>
       <h1 className="text-3xl font-bold ml-8">
@@ -37,6 +39,7 @@ const SelectedPlayer = ({ allPlayers, handleDeletePlayer, handlePlayers }) => {
 
       <button
         onClick={() => handlePlayers("player")}
+        // className={`${isActive === "player" ? "btns active" : "btns"}`}
         className="btn mt-6 ml-7 mb-5"
       >
         Add More Player

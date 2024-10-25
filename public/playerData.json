@@ -68,5 +68,15 @@
     "rating": 38,
     "player_status": "All-rounder",
     "price": 1030000
+  },
+  {
+    "id": 7,
+    "name": "Tonmoy Sutradhar",
+    "image": "https://www.shutterstock.com/image-vector/illustration-batsman-playing-cricket-action-600nw-2029010771.jpg",
+    "country": "Bangladesh",
+    "bating_position": "Right-hand",
+    "rating": 88,
+    "player_status": "Batter",
+    "price": 2080000
   }
 ]

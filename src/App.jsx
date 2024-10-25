@@ -60,7 +60,7 @@ function App() {
     }
 
     if (price <= 0 || price < plyer.price) {
-      toast.warning("Balance is too low!");
+      toast.error("Balance is too low!");
       return;
     }
 

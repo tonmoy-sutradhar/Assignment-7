@@ -14,7 +14,7 @@ const Player = ({ pr, handleAllPlayer }) => {
   return (
     <div>
       <div className="player-card">
-        <img className="w-50 " src={image} alt="" />
+        <img className="w-50 h-80" src={image} alt="" />
         <div className="flex justify-start items-center gap-3 mt-3">
           <img className="w-8 border-2 rounded-full" src={image} alt="" />
           <span className="text-xl font-bold">{name}</span>
