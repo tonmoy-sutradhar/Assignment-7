@@ -36,6 +36,7 @@ function App() {
     if (isExist) {
       toast.error("Player already exist");
     } else {
+      toast.success("congratulation!! Player success added.");
       const newPlayer = [...allPlayers, plyer];
       setAllPlayers(newPlayer);
     }
@@ -47,6 +48,7 @@ function App() {
       <Banner></Banner>
 
       <PlayersContainer
+        allPlayers={allPlayers}
         handleAllPlayer={handleAllPlayer}
         isActive={isActive}
         handlePlayers={handlePlayers}

@@ -3,7 +3,7 @@ import Player from "../Player/Player";
 import SelectedPlayer from "../SelectedPlayer/SelectedPlayer";
 import "./PlayersContainer.css";
 
-const PlayersContainer = ({ handleAllPlayer }) => {
+const PlayersContainer = ({ handleAllPlayer, allPlayers }) => {
   const [players, setPlayers] = useState([]);
   const [isActive, setIsActive] = useState("player");
 
@@ -21,7 +21,7 @@ const PlayersContainer = ({ handleAllPlayer }) => {
     <div>
       <div className="flex justify-between mx-7 mt-9">
         <div>
-          <h1 className="text-2xl font-bold">AVailable Players</h1>
+          <h1 className="text-2xl font-bold"></h1>
         </div>
         <div>
           <button
@@ -35,7 +35,7 @@ const PlayersContainer = ({ handleAllPlayer }) => {
             onClick={() => handlePlayers("selected")}
             className={`${isActive === "selected" ? "btns active" : "btns"}`}
           >
-            Selected
+            Selected {allPlayers.length}
           </button>
         </div>
       </div>
@@ -50,7 +50,10 @@ const PlayersContainer = ({ handleAllPlayer }) => {
             ></Player>
           ))
         ) : (
-          <SelectedPlayer players={players}></SelectedPlayer>
+          <SelectedPlayer
+            allPlayers={allPlayers}
+            players={players}
+          ></SelectedPlayer>
         )}
       </div>
     </div>
