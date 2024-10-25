@@ -44,15 +44,22 @@ function App() {
     if (isExist) {
       toast.error("Player already exist");
     } else {
-      toast.success("congratulation!! Player success added.");
+      toast.success(
+        `congratulation!! ${plyer.name} successfully added on squad.`
+      );
       const newPlayer = [...allPlayers, plyer];
       setAllPlayers(newPlayer);
     }
   };
 
   const handleDeletePlayer = (id) => {
+    const RmvPlayerName = allPlayers.find((p) => p.id == id);
     const removePlayer = allPlayers.filter((p) => p.id != id);
     setAllPlayers(removePlayer);
+
+    if (removePlayer) {
+      toast.success(`${RmvPlayerName.name} Successfully remove`);
+    }
   };
 
   return (
@@ -71,7 +78,7 @@ function App() {
       <Footer></Footer>
       <ToastContainer
         position="top-center"
-        autoClose={1000}
+        autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
