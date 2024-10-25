@@ -54,9 +54,16 @@ function App() {
   const [allPlayers, setAllPlayers] = useState([]);
 
   const handleAllPlayer = (plyer) => {
-    // if (handleDecresePrice(plyer.price) == 0) {
-    //   return;
-    // }
+    if (allPlayers.length >= 6) {
+      toast.warning("Maximum player capacity End!");
+      return;
+    }
+
+    if (price <= 0 || price < plyer.price) {
+      toast.warning("Balance is too low!");
+      return;
+    }
+
     handleDecresePrice(plyer.price);
     const isExist = allPlayers.find((p) => p.id == plyer.id);
     if (isExist) {
