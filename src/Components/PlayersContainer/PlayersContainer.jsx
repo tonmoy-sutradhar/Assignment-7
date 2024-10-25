@@ -25,7 +25,7 @@ const PlayersContainer = ({
     <div>
       <div className="flex justify-between mx-7 mt-9">
         <div>
-          <h1 className="text-2xl font-bold"></h1>
+          <h1 className="text-2xl font-bold">All Players</h1>
         </div>
         <div>
           <button

@@ -4,7 +4,6 @@ import Banner from "./Components/Banner/Banner";
 import Navbar from "./Components/Header/Navbar";
 import PlayersContainer from "./Components/PlayersContainer/PlayersContainer";
 import Footer from "./Components/Footer/Footer";
-
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Subcribe from "./Components/Subcribe/Subcribe";
@@ -55,8 +54,10 @@ function App() {
   const [allPlayers, setAllPlayers] = useState([]);
 
   const handleAllPlayer = (plyer) => {
+    // if (handleDecresePrice(plyer.price) == 0) {
+    //   return;
+    // }
     handleDecresePrice(plyer.price);
-
     const isExist = allPlayers.find((p) => p.id == plyer.id);
     if (isExist) {
       toast.error("Player already exist");

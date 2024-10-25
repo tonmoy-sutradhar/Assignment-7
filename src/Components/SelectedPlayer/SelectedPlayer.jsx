@@ -1,7 +1,8 @@
 import { toast } from "react-toastify";
 import "./SelectedPlayer.css";
+import PlayersContainer from "../PlayersContainer/PlayersContainer";
 
-const SelectedPlayer = ({ allPlayers, handleDeletePlayer }) => {
+const SelectedPlayer = ({ allPlayers, handleDeletePlayer, handlePlayers }) => {
   return (
     <div>
       <h1 className="text-3xl font-bold ml-8">
@@ -34,7 +35,12 @@ const SelectedPlayer = ({ allPlayers, handleDeletePlayer }) => {
         </div>
       ))}
 
-      <button className="btn mt-6 ml-7 mb-5">Add More Player</button>
+      <button
+        onClick={() => handlePlayers("player")}
+        className="btn mt-6 ml-7 mb-5"
+      >
+        Add More Player
+      </button>
     </div>
   );
 };
