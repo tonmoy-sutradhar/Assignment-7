@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import Player from "../Player/Player";
-import SelectedPlayer from "../Player/SelectedPlayer/SelectedPlayer";
+import SelectedPlayer from "../SelectedPlayer/SelectedPlayer";
 import "./PlayersContainer.css";
 
-const PlayersContainer = () => {
+const PlayersContainer = ({ handleAllPlayer }) => {
   const [players, setPlayers] = useState([]);
   const [isActive, setIsActive] = useState("player");
 
@@ -42,7 +42,13 @@ const PlayersContainer = () => {
 
       <div className="player-container">
         {isActive === "player" ? (
-          players.map((p) => <Player key={p.id} pr={p}></Player>)
+          players.map((p) => (
+            <Player
+              handleAllPlayer={handleAllPlayer}
+              key={p.id}
+              pr={p}
+            ></Player>
+          ))
         ) : (
           <SelectedPlayer players={players}></SelectedPlayer>
         )}

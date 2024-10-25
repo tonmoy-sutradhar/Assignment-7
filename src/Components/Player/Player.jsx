@@ -1,6 +1,6 @@
 import "./Player.css";
 
-const Player = ({ pr }) => {
+const Player = ({ pr, handleAllPlayer }) => {
   const { name, image, price, country, bating_position, player_status } = pr;
 
   return (
@@ -35,7 +35,10 @@ const Player = ({ pr }) => {
         <h1 className="text-small font-semibold mt-1 ">{bating_position}</h1>
         <div className="flex justify-between items-center">
           <h1 className="text-small font-semibold ">price: ${price}</h1>
-          <button className="btn">Choose Player</button>
+
+          <button onClick={() => handleAllPlayer(pr)} className="btn">
+            Choose Player
+          </button>
         </div>
       </div>
     </div>

@@ -2,11 +2,15 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center mx-7 mt-2 ">
+    <div className="flex justify-between items-center  py-3 bg-sky-100 w-full  sticky top-0 z-50 bg-opacity-65">
       <div>
-        <img src="https://i.ibb.co.com/K0Kfgzr/logo.png" alt="img" />
+        <img
+          className="ml-3"
+          src="https://i.ibb.co.com/K0Kfgzr/logo.png"
+          alt="img"
+        />
       </div>
-      <div className="text-xl font-bold flex justify-center items-center gap-8">
+      <div className="text-xl font-bold flex justify-center items-center gap-8 mr-3">
         <p>Home</p>
         <p>Fixture</p>
         <p>Teams</p>
