@@ -10,7 +10,7 @@ const Banner = ({ handlePriceIncrease }) => {
       />
 
       <h1 className="text-4xl font-bold text-center text-white mb-5 ">
-        Assemble Your Ultimate Dream 11 Cricket Team
+        Assemble Your Ultimate Dream 11 Cricket Team (IPL)
       </h1>
       <h2 className="text-2xl font-bold text-center text-white mb-5">
         Beyond Boundaries Beyond Limits
