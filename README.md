@@ -13,3 +13,5 @@ A React app called BPL Dream 11 is used to create a virtual Bangladesh Premier L
 # key Feature:
 
 When click choose player button specific player will be added in selected file. when click delete button the selected player will be delete. On the other hand Navbar price will be decrease also when player added or deleted alert will be on. On this selected section more than 6 player will be not added.
+
+## Tonmoy Sutradhar
